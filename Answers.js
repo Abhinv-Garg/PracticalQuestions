@@ -54,9 +54,9 @@ function MergeTwoArrays(arr1, n, arr2, m) {
 
 // Question 3 
 
-function longestSubSequence(str1, str2) {
-    const m = str1.lenght;
-    const n = str2.lenght;
+function longestSubSequence(str1, str2, A, B) {
+    const m = A;
+    const n = B;
     const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
 
     for (let i = 1; i <= m; i++) {
