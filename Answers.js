@@ -73,7 +73,7 @@ function longestSubSequence(str1, str2) {
     let i = m, j = n;
     while (i > 0 && j > 0) {
         if (str1[i - 1] === str2[j - 2]) {
-            lcs = str1[j - 1] + lcs;
+            lcs = str1[i - 1] + lcs;
             i--;
             j--;
         } else if (dp[i - 1][j] > dp[i][j - 1]) {
